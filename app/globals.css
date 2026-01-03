@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Brand Farbvariablen */
+:root {
+  --ink: #111111;       /* Primäre Textfarbe */
+  --paper: #FAFAF8;     /* Hintergrund */
+  --fog: #EDEDED;       /* Sekundäre Flächen */
+  --graphite: #5A5A5A;  /* Meta-Infos */
+  --uv: #6E1AFF;        /* Ultra Violet – Primärakzent */
+  --blue: #0077FF;      /* Electric Blue – Sekundärakzent */
+  --pink: #FF2DA0;      /* Neon Pink – Highlight */
+  --clay: #B86A4C;      /* Warmer Kontrapunkt */
+}
+
+/* Basis */
+html, body {
+  background-color: var(--paper);
+  color: var(--ink);
+  margin: 0;
+  padding: 0;
+}
+
+/* Typografie */
+h1, h2, h3, h4 {
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.25rem; }
+
+/* Links */
+a {
+  transition: color 0.2s ease, background-color 0.2s ease;
+  text-decoration: none;
+}
+a:hover {
+  color: var(--uv);
+}
+
+/* Blockquote */
+blockquote {
+  font-style: italic;
+  border-left: 4px solid var(--clay);
+  padding-left: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Farb-Utilities */
+.text-ink { color: var(--ink); }
+.text-graphite { color: var(--graphite); }
+.text-uv { color: var(--uv); }
+.text-blue { color: var(--blue); }
+.text-pink { color: var(--pink); }
+.text-clay { color: var(--clay); }
+
+.bg-paper { background-color: var(--paper); }
+.bg-fog { background-color: var(--fog); }
+.bg-uv { background-color: var(--uv); }
+.bg-blue { background-color: var(--blue); }
+.bg-pink { background-color: var(--pink); }
+.bg-clay { background-color: var(--clay); }
